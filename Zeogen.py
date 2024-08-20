@@ -75,19 +75,18 @@ class validator():
             return 'Not a valid Credit Card Number'
 os.system('cls')
 banner ='''
-  ______ _                                    ______              _____              _     _____ ______ _   _
- |  ____| |                           ___    |___  /             / ____|            | |   / ____|  ____| \ | |
- | |__  | | ___  _ __  _ __   __ _   ( _ )      / / ___  ___    | |     __ _ _ __ __| |  | |  __| |__  |  \| |
- |  __| | |/ _ \| '_ \| '_ \ / _` |  / _ \/\   / / / _ \/ _ \   | |    / _` | '__/ _` |  | | |_ |  __| | . ` |
- | |    | | (_) | |_) | |_) | (_| | | (_>  <  / /_|  __/ (_) |  | |___| (_| | | | (_| |  | |__| | |____| |\  |
- |_|    |_|\___/| .__/| .__/ \__,_|  \___/\/ /_____\___|\___/    \_____\__,_|_|  \__,_|   \_____|______|_| \_|
-                | |   | |                                       Cracked by lloserr  | 0click on discord
-                |_|   |_|
+
+███████╗████████╗ ██████╗ ██████╗ ███████╗ ██████╗ █████╗ ██████╗ ██████╗ ███████╗
+██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
+███████╗   ██║   ██║   ██║██████╔╝█████╗  ██║     ███████║██████╔╝██║  ██║███████╗
+╚════██║   ██║   ██║   ██║██╔══██╗██╔══╝  ██║     ██╔══██║██╔══██╗██║  ██║╚════██║
+███████║   ██║   ╚██████╔╝██║  ██║███████╗╚██████╗██║  ██║██║  ██║██████╔╝███████║
+╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝
+Fork of zeogen lol(every sc gen is.. its just that i dont hide it) forked by 0x45_1234
 '''
-print(Fore.CYAN + banner)
+print(Fore.Magenta + banner)
 print(Fore.YELLOW + ' ')
 print('Cards & Balance List:')
-print('0.  < $1000 AMZ SC')
 print('1.  $1000 AMZ SC')
 print('2.  $2000 AMZ SC')
 print('3.  $5000 AMZ SC')
@@ -96,14 +95,13 @@ print('5.  $10.000 AMZ SC')
 print('6.  $20.000 AMZ SC')
 print('7.  $40.000 AMZ SC')
 print('8.  $100.000 AMZ SC')
-print('9.  AMZ Corporate Revolving SC')
-print('10. Multifunction Discover Card')
-print('11. BestBuy Storecard')
-print('12. Target Storecard')
-print('13. AMZ Visa Signature CC')
-print('14. Amazon Standard 1-10K SC')
-print('15. HQ BestBuy Storecard')
-print('16. HQ Multifunction Discover Card')
+print('9. Multifunction Discover Card')
+print('10. BestBuy Storecard')
+print('11. Target Storecard')
+print('12. AMZ Visa Signature CC')
+print('13. Amazon Standard 1-10K SC')
+print('14. HQ BestBuy Storecard')
+print('15. HQ Multifunction Discover Card')
 print(' ')
 whatcard = input("[?] What Card Do You Want To Generate? [ONLY PUT NUMBERS!] ")
 
@@ -213,29 +211,7 @@ if whatcard == 8:
         ff5 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5)
         print(validator().validate(int(cc)))
-if whatcard == 0:
-    howmany = input('[?] How many cards do you want to generate: ')
-    howmany = int(howmany)
-    for x in range(howmany):
-        bin = '604578112729'
-        ff1 = random.choice(randomnums)
-        ff2 = random.choice(randomnums)
-        ff3 = random.choice(randomnums)
-        ff4 = random.choice(randomnums)
-        cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4)
-        print(validator().validate(int(cc)))
 if whatcard == 9:
-    howmany = input('[?] How many cards do you want to generate: ')
-    howmany = int(howmany)
-    for x in range(howmany):
-        bin = '604578172729'
-        ff1 = random.choice(randomnums)
-        ff2 = random.choice(randomnums)
-        ff3 = random.choice(randomnums)
-        ff4 = random.choice(randomnums)
-        cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4)
-        print(validator().validate(int(cc)))
-if whatcard == 10:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -246,7 +222,7 @@ if whatcard == 10:
         ff4 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4)
         print(validator().validate(int(cc)))
-if whatcard == 11:
+if whatcard == 10:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -263,7 +239,7 @@ if whatcard == 11:
         ff10 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5) + str(ff6) + str(ff7) + str(ff8) + str(ff9) + str(ff10)
         print(validator().validate(int(cc)))
-if whatcard == 12:
+if whatcard == 11:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -276,7 +252,7 @@ if whatcard == 12:
         ff6 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5) + str(ff6)
         print(validator().validate(int(cc)))
-if whatcard == 13:
+if whatcard == 12:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -293,7 +269,7 @@ if whatcard == 13:
         ff10 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5) + str(ff6) + str(ff7) + str(ff8) + str(ff9) + str(ff10)
         print(validator().validate(int(cc)))
-if whatcard == 14:
+if whatcard == 13:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -308,7 +284,7 @@ if whatcard == 14:
         ff8 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5) + str(ff6) + str(ff7) + str(ff8)
         print(validator().validate(int(cc)))
-if whatcard == 15:
+if whatcard == 14:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -321,7 +297,7 @@ if whatcard == 15:
         ff6 = random.choice(randomnums)
         cc = str(bin) + str(ff1) + str(ff2) + str(ff3) + str(ff4) + str(ff5) + str(ff6)
         print(validator().validate(int(cc)))
-if whatcard == 16:
+if whatcard == 15:
     howmany = input('[?] How many cards do you want to generate: ')
     howmany = int(howmany)
     for x in range(howmany):
@@ -340,6 +316,6 @@ if whatcard == 16:
         print(validator().validate(int(cc)))
 print(' ')
 print(' ')
-print(Fore.CYAN + 'If the cards are Invalid, simply run the gen again!')
+print(Fore.MAGENTA + 'If the cards are Invalid, simply run the gen again!')
 print(' ')
 input('Press ENTER to exit')
